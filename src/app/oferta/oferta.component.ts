@@ -2,6 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 import {OfertasService} from '../ofertas.service';
 import {Oferta} from '../shared/oferta.model';
+import { Observable } from 'rxjs/Observable';
+
+import 'rxjs/Rx'
+import { Observer } from 'rxjs/Observer';
 
 @Component({
   selector: 'app-oferta',
@@ -24,6 +28,7 @@ export class OfertaComponent implements OnInit {
       this.oferta = oferta
     })
     
+   
   }
-
+ 
 }

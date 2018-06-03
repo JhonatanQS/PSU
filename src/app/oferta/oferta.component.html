@@ -1,6 +1,8 @@
 <div class="container">
   <div class="oferta" *ngIf="oferta !== undefined">
 
+
+    
     <div class="row">
       <div class="col">
         <h4>{{oferta.descricao_oferta}}</h4>
@@ -47,8 +49,8 @@
     <div class="col">
       <nav>
         <div class="nav nav-tabs" id="nav-tab" role="tablist">
-          <a class="nav-item nav-link active" routerLink="como-usar" data-toggle="tab">Como usar</a>
-          <a class="nav-item nav-link"  data-toggle="tab" routerLink="onde-fica" >Onde fica?</a>
+          <a class="nav-item nav-link" routerLinkActive="active" routerLink="como-usar" data-toggle="tab">Como usar</a>
+          <a class="nav-item nav-link" routerLinkActive="active"  data-toggle="tab" routerLink="onde-fica" >Onde fica?</a>
         </div>
       </nav>
       <div class="tab-content">
